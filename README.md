@@ -5,11 +5,11 @@
 
 #### Spotify V2
 
-> Our first build week project - a clone of the Spotify Web App.
+> Rebuild of our first buildweek project - This is a version 2 clone of the Spotify Web App.
+> 
 ![image](https://user-images.githubusercontent.com/65465380/111052084-dd004f80-844f-11eb-9c40-4997c2e9603e.png)
 
-
-> Each team member took ownership of building a specific page and also in developing beskpoke dynamic interactivity.
+> Each contributor will take ownership of any claimed issues and feature enhancements on the github project board submitting deliverables as to the highest standard possible.
 
 #### Site
 
@@ -28,9 +28,9 @@
 
 > Our git development workflow as follows: 
 
-- Main branch for live production/deployment on netlify hosting.
-- Development branch for stanging and testing so any rough commits don't get pushed straight into production (main).
-- Local development branches for feature development.
+- Main branch for live production/deployment with Netlify.
+- Development branch for feature integration and application testing.
+- Local development branches for ongoing feature development.
 
 ```            
                              _______       _____                        
@@ -64,7 +64,6 @@ main ------------ dev <------> freature/branches (Ekow, Toni, Huseyin & Sean)
 - git add . - adds all edited and changed local files to staging ready for commmit
 - git commit -m "message" - commits all added staged files (basically think of committing like saving your files locally)
 - git push - will push the files up to the remote / origin on the branch you are on.
-
 
 1. Always switch into dev every new session and pull latest changes (you could do the same for master, so you always have up to date master and dev branch)
 2. Create or switch to your own feature branch, don't work directly on dev/master/main (if not yet created, create a new feature branch from the latest dev branch)

@@ -1,12 +1,11 @@
 function NavLinks(path) {
   return /*html*/ `
-  <nav aria-label="breadcrumb" class="row p-3">
+  <nav class="row px-4">
     <a href="/">Home</a>
-    <a href="#/profile">Profile</a>
     <a href="#/search">Search</a>
     <a href="#/album">Album</a>
   </nav>
-  `;
+  `
 }
 
-export { NavLinks };
+export { NavLinks }

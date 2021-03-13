@@ -3,7 +3,8 @@ import { router } from './router.js'
 
 // pages
 import HomePage from './pages/HomePage.js'
-import ProfilePage from './pages/ProfilePage.js'
+import SearchPage from './pages/SearchPage.js'
+import AlbumPage from './pages/AlbumPage.js'
 
 function App() {
   const state = {
@@ -12,18 +13,21 @@ function App() {
         title: 'Night Nurse',
         artist: 'Gregory Issacs',
         album: '2011',
+        image: 'https://i.ytimg.com/vi/uwQT-r-lXWg/hqdefault.jpg',
         length: 4.09
       },
       {
         title: 'Drive',
         artist: 'The Cars',
         album: 'Complete Greatest Hits',
+        image: 'https://i.ytimg.com/vi/uwQT-r-lXWg/hqdefault.jpg',
         length: 3.57
       },
       {
         title: 'Hungry for the power',
         artist: 'Jamie Jones',
         album: '2011',
+        image: 'https://i.ytimg.com/vi/uwQT-r-lXWg/hqdefault.jpg',
         length: 3.57
       }
     ],
@@ -36,7 +40,8 @@ function App() {
 
   const routes = [
     { path: '/', component: HomePage },
-    { path: '/profile', component: ProfilePage }
+    { path: '/search', component: SearchPage },
+    { path: '/album', component: AlbumPage }
   ]
 
   // pass routes object and also global app state down to each page

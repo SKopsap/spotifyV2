@@ -1,5 +1,13 @@
-export function AlbumPage() {
+import { Sidebar } from '../containers/Sidebar.js'
+
+export default async function AlbumPage() {
   return /*html*/ `
-   <h2>AlbumPage</h2>
+  <div class="d-flex">
+    ${Sidebar()}
+    <main>
+      <h3>AlbumPage</h3>
+      <h6></h6>
+    </main>
+  </div>
   `
 }

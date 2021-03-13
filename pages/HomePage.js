@@ -1,30 +1,33 @@
 import { Sidebar } from '../containers/Sidebar.js'
-import { Card } from '../components/CardComponent.js'
+import { Section } from '../containers/SectionContainer.js'
 
 // testing css in js style api for a card component
 const cardCSS = {
   width: '300px'
 }
 
-function HomePage(state, path) {
-  // creating new card list component using a card component
-  function cardList() {
-    return `
-      ${state.data.map((song) => `${Card(song, cardCSS)}`).join('')}
-    `
-  }
+export default async function HomePage(state) {
+  const url1 = 'https://striveschool-api.herokuapp.com/api/deezer/artist/413/albums'
+  const url2 = 'https://striveschool-api.herokuapp.com/api/deezer/artist/414/albums'
 
-  return /*html*/ `
+  try {
+    const resp1 = await fetch(url1)
+    const resp2 = await fetch(url2)
+
+    const [data1, data2] = await Promise.all([resp1.json(), resp2.json()])
+
+    return /*html*/ `
     <div class="d-flex">
       <div>
-        ${Sidebar(path)}
+        ${Sidebar()}
       </div>
       <main class="container-fluid">
-        <h3>Home</h3>
-        ${cardList()}
+        ${Section('Recently Played', data1.data.slice(0, 5))}
+        ${Section('Top 50', data2.data.slice(0, 5))}
       </main>
     </div>
   `
+  } catch (error) {
+    console.error(error)
+  }
 }
-
-export default HomePage

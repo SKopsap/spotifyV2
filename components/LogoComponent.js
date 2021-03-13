@@ -1,9 +1,9 @@
 function Logo(src, title) {
   return /*html*/ `
-    <div style="width: 150px; height: 50px">
-        <a href="/"><img src="${src}" alt="${title}"></a>
-    </div>
-    `;
+    <div class="mb-2 mt-3 p-4">
+      <a href="/"><img src="${src}" alt="${title}"></a>
+    </div> 
+    `
 }
 
-export { Logo };
+export { Logo }

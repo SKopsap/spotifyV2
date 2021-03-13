@@ -19,9 +19,9 @@
 > Tools, libraries and awesome tech sanctioned for this project
 
 - Major languages - HTML, CSS, Javascript(ES6)
-- Frameworks - Bootstrap v4.6
+- Frameworks - BootstrapV5
 - Technologies - Netlify Hosting & CDN
-- Infrastructure - Github CI
+- Infrastructure - Github CICD
 
 #### Devops
 
@@ -48,7 +48,7 @@ Main branch        |
 |                  | /   ex. branch: toni/header-img-fix  
 |                  |/ 
 |                  |
-main ------------ dev <------> freature branches (Ekow, Toni, Huseyin & Sean)
+main ------------ dev <------> freature/branches (Ekow, Toni, Huseyin & Sean)
 
 ```
 

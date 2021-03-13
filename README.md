@@ -1,5 +1,5 @@
 <div align="center" justify="center" style="text-align:center; -webkit-animation: rotate-90-cw 3s linear infinite both; animation: rotate-90-cw 3s linear infinite both">
-  <pre> <img width="145" alt="Strive Logo" src="https://s3.eu-west-1.amazonaws.com/eduflow-production/course-thumbnails/950433351938043.png"> <img width="310" alt="Strive Logo" src="https://bookface-images.s3.amazonaws.com/logos/8e7133f016718ede36663987992de88d15606d02.png?1593602849">  <img width="285" alt="Strive Logo" src="https://developer.spotify.com/assets/branding-guidelines/logos.svg"> </pre>
+  <pre> <img width="145" alt="Strive Logo" src="https://s3.eu-west-1.amazonaws.com/eduflow-production/course-thumbnails/950433351938043.png"> <img width="310" alt="Strive Logo" src="https://bookface-images.s3.amazonaws.com/logos/8e7133f016718ede36663987992de88d15606d02.png?1593602849">  <img width="350" alt="Strive Logo" src="https://developer.spotify.com/assets/branding-guidelines/logos.svg"> </pre>
 </div>
 <br>
 

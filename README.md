@@ -1,9 +1,9 @@
 <div align="center" justify="center" style="text-align:center; -webkit-animation: rotate-90-cw 3s linear infinite both; animation: rotate-90-cw 3s linear infinite both">
-  <pre> <img width="145" alt="Strive Logo" src="https://s3.eu-west-1.amazonaws.com/eduflow-production/course-thumbnails/950433351938043.png"> <img width="310" alt="Strive Logo" src="https://bookface-images.s3.amazonaws.com/logos/8e7133f016718ede36663987992de88d15606d02.png?1593602849">  <img width="285" alt="Strive Logo" src="/assets/Logo1.png"> </pre>
+  <pre> <img width="145" alt="Strive Logo" src="https://s3.eu-west-1.amazonaws.com/eduflow-production/course-thumbnails/950433351938043.png"> <img width="310" alt="Strive Logo" src="https://bookface-images.s3.amazonaws.com/logos/8e7133f016718ede36663987992de88d15606d02.png?1593602849">  <img width="350" alt="Strive Logo" src="https://developer.spotify.com/assets/branding-guidelines/logos.svg"> </pre>
 </div>
 <br>
 
-#### BW1 Spotify Clone
+#### Spotify V2
 
 > Our first build week project - a clone of the Spotify Web App.
 <img width="500" alt="Spotify clone homepage" src="./assets/readme/screenshot1.PNG"> 
@@ -12,16 +12,16 @@
 
 #### Site
 
-> [Spotify Clone - live demo](https://strive-bw1-spotify-clone.netlify.app)
+> [Spotify V2 - live demo](https://spotify-v2.netlify.app/)
 
 #### Stack
 
 > Tools, libraries and awesome tech sanctioned for this project
 
 - Major languages - HTML, CSS, Javascript(ES6)
-- Frameworks - Bootstrap v4.6
+- Frameworks - BootstrapV5
 - Technologies - Netlify Hosting & CDN
-- Infrastructure - Github CI
+- Infrastructure - Github CICD
 
 #### Devops
 
@@ -48,7 +48,7 @@ Main branch        |
 |                  | /   ex. branch: toni/header-img-fix  
 |                  |/ 
 |                  |
-main ------------ dev <------> freature branches (Ekow, Toni, Huseyin & Sean)
+main ------------ dev <------> freature/branches (Ekow, Toni, Huseyin & Sean)
 
 ```
 
@@ -117,6 +117,8 @@ To our Strive mentors:
 - Luis
 - Stefano
 - Tatiana
+- Ubeyt
+- Riccardo
 
 #### 📝 License
 

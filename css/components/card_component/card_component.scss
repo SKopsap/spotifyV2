@@ -1,0 +1,67 @@
+// CARD STYLES
+.card-cover-image {
+  box-shadow: 0px 8px 8px 8px rgba(26, 26, 26, 0.726);
+}
+
+.btn-play {
+  background-color: #e146aa;
+  border: solid 2px transparent;
+  display: none;
+  box-shadow: 0px 2px 2px 2px rgba(212, 212, 212, 0.13);
+}
+
+.btn-play:hover {
+  cursor: default;
+}
+
+.card:hover .btn-play {
+  display: block;
+}
+
+.card {
+  animation: 0.4s ease-in-out both fade-in;
+}
+
+.card:hover {
+  background: #252525ee !important;
+}
+
+// Loop from 1-12.
+@for $i from 1 through 100 {
+  .card {
+    &:nth-child(#{$i}) {
+      // Delay the animation. Delay increases as items loop.
+      animation-delay: $i * (0.1s);
+    }
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+// .reload {
+//   background: #e2751c;
+//   background: linear-gradient(45deg, rgba(#e21c1c, 1) 0%, rgba(#e2751c, 1) 100%);
+//   border-radius: 50px;
+//   bottom: 20px;
+//   box-shadow: 0 5px 20px rgba(#000, 0.2);
+//   color: #fff;
+//   font-size: 13px;
+//   font-weight: bold;
+//   left: 50%;
+//   letter-spacing: 0.075em;
+//   padding: 10px 15px;
+//   position: absolute;
+//   text-decoration: none;
+//   text-transform: uppercase;
+//   transform: translateX(-50%);
+// }

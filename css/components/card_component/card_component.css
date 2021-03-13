@@ -553,48 +553,4 @@
             transform: scale(1);
   }
 }
-
-body {
-  background-color: #121212;
-}
-
-nav a,
-nav a:hover {
-  font-size: 1.2rem;
-  color: white;
-  text-decoration: none;
-  margin-bottom: 1rem;
-}
-
-main {
-  background: #121212;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(42%, #121212), to(rgba(60, 12, 14, 0.970092)));
-  background: linear-gradient(0deg, #121212 42%, rgba(60, 12, 14, 0.970092) 100%);
-  min-width: 100vw;
-  min-height: 100vh;
-  padding: 2rem !important;
-}
-
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  height: 90px;
-  width: 100%;
-  background-color: #272626;
-  color: #fff;
-}
-
-.truncate {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.line-clamp {
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-/*# sourceMappingURL=global.css.map */
+/*# sourceMappingURL=card_component.css.map */

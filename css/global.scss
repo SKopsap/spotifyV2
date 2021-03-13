@@ -1,8 +1,9 @@
+@import './components/card_component_styles/card_component.scss';
+
 // html {
 //   height: 100%;
 //   width: 100%;
 // }
-
 body {
   background-color: #121212;
 }
@@ -19,11 +20,7 @@ nav {
 
 main {
   background: rgb(18, 18, 18);
-  background: linear-gradient(
-    0deg,
-    rgba(18, 18, 18, 1) 42%,
-    rgba(60, 12, 14, 0.9700922605370274) 100%
-  );
+  background: linear-gradient(0deg, rgba(18, 18, 18, 1) 42%, rgba(60, 12, 14, 0.9700922605370274) 100%);
   min-width: 100vw;
   min-height: 100vh;
   padding: 2rem !important;
@@ -39,10 +36,10 @@ footer {
   color: #fff;
 }
 
+// Text utils
+
 .truncate {
   text-overflow: ellipsis;
-
-  /* Needed to make it work */
   overflow: hidden;
   white-space: nowrap;
 }
@@ -53,50 +50,5 @@ footer {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-
-// CARD ANIMATIONS
-.card {
-  animation: 0.4s ease-in-out both fade-in;
-}
-
-// Loop from 1-12.
-@for $i from 1 through 100 {
-  .card {
-    &:nth-child(#{$i}) {
-      // Delay the animation. Delay increases as items loop.
-      animation-delay: $i * (0.1s);
-    }
-  }
-}
-
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-    transform: scale(0.97);
-  }
-
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-// .reload {
-//   background: #e2751c;
-//   background: linear-gradient(45deg, rgba(#e21c1c, 1) 0%, rgba(#e2751c, 1) 100%);
-//   border-radius: 50px;
-//   bottom: 20px;
-//   box-shadow: 0 5px 20px rgba(#000, 0.2);
-//   color: #fff;
-//   font-size: 13px;
-//   font-weight: bold;
-//   left: 50%;
-//   letter-spacing: 0.075em;
-//   padding: 10px 15px;
-//   position: absolute;
-//   text-decoration: none;
-//   text-transform: uppercase;
-//   transform: translateX(-50%);
-// }
 
 //PLAYBAR STYLES

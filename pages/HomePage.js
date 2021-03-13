@@ -1,22 +1,20 @@
-import { Sidebar } from "../containers/Sidebar.js";
-import { Section } from "../containers/SectionContainer.js";
-import { Playbar } from "../components/PlaybarComponent.js";
+import { Sidebar } from '../containers/SidebarContainer.js'
+import { Section } from '../containers/SectionContainer.js'
+import { Playbar } from '../components/PlaybarComponent.js'
 // testing css in js style api for a card component
 const cardCSS = {
-  width: "300px",
-};
+  width: '300px'
+}
 
 export default async function HomePage(state) {
-  const url1 =
-    "https://striveschool-api.herokuapp.com/api/deezer/artist/413/albums";
-  const url2 =
-    "https://striveschool-api.herokuapp.com/api/deezer/artist/414/albums";
+  const url1 = 'https://striveschool-api.herokuapp.com/api/deezer/artist/413/albums'
+  const url2 = 'https://striveschool-api.herokuapp.com/api/deezer/artist/414/albums'
 
   try {
-    const resp1 = await fetch(url1);
-    const resp2 = await fetch(url2);
+    const resp1 = await fetch(url1)
+    const resp2 = await fetch(url2)
 
-    const [data1, data2] = await Promise.all([resp1.json(), resp2.json()]);
+    const [data1, data2] = await Promise.all([resp1.json(), resp2.json()])
 
     return /*html*/ `
     <div class="d-flex">
@@ -24,15 +22,15 @@ export default async function HomePage(state) {
         ${Sidebar()}
       </div>
       <main class="container-fluid">
-        ${Section("Recently Played", data1.data.slice(0, 5))}
-        ${Section("Top 50", data2.data.slice(0, 5))}
+        ${Section('Recently Played', data1.data.slice(0, 5))}
+        ${Section('Top 50', data2.data.slice(0, 5))}
       </main>
       <footer> 
           ${Playbar()}
       </footer>
     </div>
-  `;
+  `
   } catch (error) {
-    console.error(error);
+    console.error(error)
   }
 }

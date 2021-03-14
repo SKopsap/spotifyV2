@@ -10,13 +10,12 @@ export default async function HomePage(state) {
   const url1 = 'https://striveschool-api.herokuapp.com/api/deezer/artist/413/albums'
   const url2 = 'https://striveschool-api.herokuapp.com/api/deezer/artist/414/albums'
 
-  try {
-    const resp1 = await fetch(url1)
-    const resp2 = await fetch(url2)
+  const resp1 = await fetch(url1)
+  const resp2 = await fetch(url2)
 
-    const [data1, data2] = await Promise.all([resp1.json(), resp2.json()])
+  const [data1, data2] = await Promise.all([resp1.json(), resp2.json()])
 
-    return /*html*/ `
+  return /*html*/ `
     <div class="d-flex">
       <div>
         ${Sidebar()}
@@ -30,7 +29,4 @@ export default async function HomePage(state) {
       </footer>
     </div>
   `
-  } catch (error) {
-    console.error(error)
-  }
 }

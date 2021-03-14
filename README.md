@@ -6,7 +6,8 @@
 #### Spotify V2
 
 > Rebuild of our first buildweek project - This is a version 2 clone of the Spotify Web App.
-> 
+<br>
+
 ![image](https://user-images.githubusercontent.com/65465380/111052084-dd004f80-844f-11eb-9c40-4997c2e9603e.png)
 
 > Each contributor will take ownership of any claimed issues and feature enhancements on the github project board submitting deliverables as to the highest standard possible.
@@ -23,6 +24,9 @@
 - Frameworks - BootstrapV5
 - Technologies - Netlify Hosting & CDN
 - Infrastructure - Github CICD
+
+#### Wakatime stats
+<img width="800" src="https://github.com/skopsap/spotifyv2/blob/develop/images/stat.svg" alt="Waka stats for develop branch"/>
 
 #### Devops
 

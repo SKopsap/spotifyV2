@@ -5,22 +5,49 @@ import { TopNav } from '../components/TopNavComponent.js'
 
 import { _waitForElement } from '../utils/mutationObserver.js'
 
-export default async function SearchPage({ user }, path) {
-  const state = {
-    searchTerm: 'inxs',
-    prevSearch: [],
-    data: {}
-  }
+export default function SearchPage() {
+  getInitialData()
 
+  return /*html*/ `
+    <div class="d-flex">
+      <div>
+        ${Sidebar()}
+      </div>
+      <main class="container-fluid">
+        ${TopNav()}
+        <div id="filtered">
+          ${searchFragment()}
+        </div>
+      </main>
+      <footer> 
+          ${Playbar()}
+      </footer>
+    </div>
+  `
+}
+
+async function getInitialData() {
   const resp1 = await fetch('https://striveschool-api.herokuapp.com/api/deezer/artist/413/albums')
   const resp2 = await fetch('https://striveschool-api.herokuapp.com/api/deezer/artist/414/albums')
   const [data1, data2] = await Promise.all([resp1.json(), resp2.json()])
 
-  const searchInputDidMount = (async () => {
-    const element = await _waitForElement(`#search-input`)
+  document.getElementById('filtered').innerHTML = `
+  ${Section('Recently Played', data1.data.slice(0, 5))}
+  ${Section('Top 50', data2.data.slice(0, 5))}
+  `
+}
 
-    let timer
-    const timeoutVal = 500
+async function searchFragment() {
+  const state = {
+    searchTerm: 'inxs'
+  }
+
+  let timer
+  const timeoutVal = 500
+
+  const elementDidMount = (async () => {
+    const element = await _waitForElement('#search-input')
+    console.log(element)
 
     element.addEventListener('keypress', handleKeyPress)
     element.addEventListener('keyup', handleKeyUp)
@@ -50,22 +77,4 @@ export default async function SearchPage({ user }, path) {
       }, timeoutVal)
     }
   })()
-
-  return /*html*/ `
-    <div class="d-flex">
-      <div>
-        ${Sidebar()}
-      </div>
-      <main class="container-fluid">
-        ${TopNav()}
-        <div id="filtered">
-          ${Section('Recently Played', data1.data.slice(0, 5))}
-          ${Section('Top 50', data2.data.slice(0, 5))}
-        </div>
-      </main>
-      <footer> 
-          ${Playbar()}
-      </footer>
-    </div>
-  `
 }

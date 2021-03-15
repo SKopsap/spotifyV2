@@ -1,4 +1,4 @@
-export default async function GenrePage() {
+export default function GenrePage() {
   return /*html*/ `
   
   `

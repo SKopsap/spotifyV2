@@ -1,5 +1,5 @@
 <div align="center" justify="center" style="text-align:center; -webkit-animation: rotate-90-cw 3s linear infinite both; animation: rotate-90-cw 3s linear infinite both">
-  <pre> <img width="310" alt="Strive Logo" src="https://bookface-images.s3.amazonaws.com/logos/8e7133f016718ede36663987992de88d15606d02.png?1593602849">  <img width="350" alt="Strive Logo" src="https://developer.spotify.com/assets/branding-guidelines/logos.svg"> </pre>
+  <pre> <img width="310" alt="Strive Logo" src="https://bookface-images.s3.amazonaws.com/logos/8e7133f016718ede36663987992de88d15606d02.png?1593602849">  <img width="450" alt="Strive Logo" src="https://developer.spotify.com/assets/branding-guidelines/logos.svg"> </pre>
 </div>
 <br>
 
@@ -69,18 +69,22 @@ Our 'main' deployment branch is CI into Netlify so any pushes to the main branch
 
 #### Team
 
-
-
-👤 Ekow
-
-👤 Huseyin
-
-👤 Toni
-
-👤 Sean
-
-- GitHub: [@githubhandle](https://github.com/SKopsap)
-- LinkedIn: [LinkedIn](https://linkedin.com/seanknowlesmd)
+<div float="left">
+  <div>
+    👤 Ekow
+  </dv>
+  <div>
+    👤 Huseyin
+  </dv>
+  <div>
+    👤 Tony
+  </dv>
+  <div>
+    👤 Sean
+    <a href="https://github.com/SKopsap">Github</a> |
+    <a href="https://linkedin.com/seanknowlesmd">LinkedIn</a>
+  </dv>
+</div>
 
 #### 🤝 Contributing
 

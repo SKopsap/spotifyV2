@@ -14,10 +14,10 @@ export async function router(routes, state) {
 
   const findComponentByPath = (path) => routes.find((r) => r.path.match(new RegExp(`^\\${path}$`, 'gmi'))) || false
 
-  const router = async () => {
+  const router = () => {
     const path = hashLocation(document.location.hash)
     const { component = ErrorComponent } = findComponentByPath(path, routes) || {}
-    document.getElementById('app').innerHTML = await component(state, path)
+    document.getElementById('app').innerHTML = component(state, path)
   }
 
   window.addEventListener('hashchange', router)

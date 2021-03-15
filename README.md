@@ -86,7 +86,7 @@ Our 'main' deployment branch is CI into Netlify so any pushes to the main branch
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](issues/).
+Feel free to check the [issues page](https://github.com/SKopsap/SpotifyV2/issues).
 
 #### Show your support
 

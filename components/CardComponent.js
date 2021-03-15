@@ -4,7 +4,6 @@ const cssDefaults = {
 }
 
 function Card({ title = '', cover_big = '' }, css = cssDefaults) {
-  console.log(`title: ${title}`)
   return /*html*/ `
     <div style="max-width: ${css.width}; height: ${css.height}; background-color: #161616; position: relative; cursor: pointer; border-radius: 0.4rem;" class="d-flex flex-column m-1 card p-3 text-left">
      <img class="card-cover-image" style="max-width: 100%" src="${cover_big}" alt="${title}" />

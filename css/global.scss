@@ -26,6 +26,18 @@ main {
   padding: 2rem !important;
 }
 
+// TODO fix focus
+input:focus {
+  outline: none;
+  border: none;
+  background-color: red !important;
+}
+
+input:active {
+  outline: none;
+  border: none;
+}
+
 footer {
   position: fixed;
   left: 0;

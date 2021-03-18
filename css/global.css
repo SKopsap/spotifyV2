@@ -593,6 +593,14 @@ footer {
   color: #fff;
 }
 
+footer input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+  background-color: white;
+}
+
 .truncate {
   text-overflow: ellipsis;
   overflow: hidden;
